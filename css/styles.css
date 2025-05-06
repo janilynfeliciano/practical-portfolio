@@ -1,0 +1,99 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background: linear-gradient(to right, black, #00FF00);
+  color: white;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 800px;
+  padding: 20px;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px auto;
+  display: block;
+}
+
+h1, h2, h3 {
+  text-shadow: 1px 1px 2px black, 0 0 25px #00FF00, 0 0 5px green;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  text-shadow: 1px 1px 2px red, 0 0 25px white, 0 0 darkgreen;
+}
+
+nav {
+  margin: 20px 0;
+}
+
+nav a, #toggle-dark {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #00FF00;
+  background-color: black;
+  border-radius: 5px;
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.card {
+  background: #1f1f1f;
+  padding: 1.5rem;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 0 10px green;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px yellow;
+}
+
+.card p {
+  color: #ccc;
+  text-align: justify;
+}
+
+footer p {
+  margin-top: 20px;
+}
+
+/* DARK MODE STYLES */
+body.dark-mode {
+  background: linear-gradient(to right, #111, #003300);
+}
+
+body.dark-mode nav a,
+body.dark-mode #toggle-dark {
+  background-color: #111;
+  color: #00FF00;
+}
+
+body.dark-mode .card {
+  background: #222;
+  box-shadow: 0 0 10px #00FF00;
+}

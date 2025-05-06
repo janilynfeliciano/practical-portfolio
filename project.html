@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dark Mode Portfolio</title>
+  <link rel="stylesheet" href="css/project.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Project.html">Project</a>
+    </nav>
+  </header>
+
+  <section id="projects">
+    <div class="hero">
+      <h1>Project</h1>
+      <button class="toggle-btn" onclick="toggleMode()">Dark Mode</button>
+    </div>
+
+    <div class="projects">
+      <div class="card">
+        <h3>UI/UX Design</h3>
+        <p>I provide professional UI/UX design services focused on intuitive, aesthetic and functional user interfaces...</p>
+      </div>
+      <div class="card">
+        <h3>Graphic Design</h3>
+        <p>I provide creative graphic design services that will bring your ideas to life into stunning visual masterpieces...</p>
+      </div>
+      <div class="card">
+        <h3>Frontend Dev</h3>
+        <p>I offer frontend development services that focus on creating attractive and responsive user interfaces...</p>
+      </div>
+    </div>
+
+    <div class="contact">
+      <a href="Home.html">Back Home</a>
+    </div>
+  </section>
+  <script>
+function toggleMode() {
+    document.body.classList.toggle('light');
+  }
+  </script>
+
+  <footer>
+    &copy; 2025 Janilyn Feliciano. All Rights Reserved.
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
